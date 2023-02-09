@@ -21,6 +21,14 @@ Create Directories, Groups and Users via Script
 useradd carlos -m -s /bin/bash -p $(openssl passwd Pass123) -G GRP_ADM
 ````
 
+> Note! The following command changes the ownership of the directory `adm` from root to GRP_ADM 
+
+````
+chown root:GRP_ADM /adm
+
+````
+
+
 - 7 Save the .sh file, create a snapshot(backup) of the system in case any error happen and you have to go back
 
 - 8 To give the permission to run the script: `chmod +x create_dir_group_users.sh`
