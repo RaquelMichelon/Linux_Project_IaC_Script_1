@@ -1,5 +1,5 @@
 # Linux Project Script_1 - Infrastructure as Code (IaC)
-Creating Users via Script
+Create Directories, Groups and Users via Script
 
 ## Steps
 
