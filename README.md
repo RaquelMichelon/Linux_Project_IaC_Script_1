@@ -13,7 +13,7 @@ Creating Users via Script
 
 - 5 To create a new directory to store the script: `mkdir scripts` and change to that directory: `cd /scripts`
 
-- 6 To create the script file with .sh extension (here we are using nano text editor, but you can choose others like vi or vim): `nano create_users.sh`
+- 6 To create the script file with .sh extension (here we are using nano text editor, but you can choose others like vi or vim): `nano create_dir_group_users.sh`
 
 > Note! `-m` = to create a user folder; `-s /bin/bash` = to the user has a script in bash; `-p $(openssl passwd Pass123)` = to create the user password with the value Pass123.
 
@@ -21,10 +21,12 @@ Creating Users via Script
 useradd carlos -m -s /bin/bash -p $(openssl passwd Pass123) -G GRP_ADM
 ````
 
-- 7 To give the permission to run the script: `chmod +x create_users.sh`
+- 7 Save the .sh file, create a snapshot(backup) of the system in case any error happen and you have to go back
 
-- 8 To run/execute the script: `./create_users.sh`
+- 8 To give the permission to run the script: `chmod +x create_dir_group_users.sh`
 
-- 9 To check if the new users were created: `cat /etc/passwd`
+- 9 To run/execute the script: `./create_dir_group_users.sh`
+
+- 10 To check if the new users were created: `cat /etc/passwd`
 
 > Note! Only root users have permission to run the script.
