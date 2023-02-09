@@ -30,3 +30,17 @@ useradd carlos -m -s /bin/bash -p $(openssl passwd Pass123) -G GRP_ADM
 - 10 To check if the new users were created: `cat /etc/passwd`
 
 > Note! Only root users have permission to run the script.
+
+- 11 Generate a new token in: https://github.com/settings/tokens/new and check in the `repo` option
+
+- 12 To instal git on the server: `apt install git -y`
+
+  - to config git: `git config --global user.email "emailRegistredOnGitHubHere" `
+  - to config git: `git config --global user.name "userName" `
+
+- 13 Go to the folder where are the script file: `cd /scripts`
+
+- 14 Init git: `git init`; Add to staging: `git add create_dir_group_users.sh`; Commit: `git commit -m "adding script file" `; Define branch: `git branch -M main; Define remote repository: `git remote add origin https://github.com/RaquelMichelon/Linux_Project_IaC_Script_1.git`; Push: `git push -u origin main" 
+
+> Note! In the password field that is asked by your remote repository, paste here the token created on the step 11.
+
